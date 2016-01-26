@@ -666,6 +666,38 @@ cite:before{
   content: "- ";
 }
 
+
+ .page-header{
+  border-bottom: solid 5px red;
+ }
+ .page-header:after{
+  clear: both;display: table;
+  content: "";
+ }
+
+.bgc{
+  background-color: lightgreen;
+}
+
+.tv{
+  width: 200px;
+  min-height: 140px;
+  border: solid 5px rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+  text-align: center;
+  color: #FFF;
+  
+}
+.tv p{}
+.value{
+  font-size: 24px;
+}
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
