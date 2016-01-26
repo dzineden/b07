@@ -1,2 +1,3 @@
 # b07
-jquery-demo
+Hey all, these are the files  created to demo variuos jQuery Features, 
+Happy Learning
