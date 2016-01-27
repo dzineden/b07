@@ -1,23 +1,23 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
 	
 	alert('Hey JQuery');
 
-	$('.page-header').addClass('bgc');
+	jQuery('.page-header').addClass('bgc');
 
 	alert('class added');
 
-	$('.page-header').removeClass('bgc');
+	jQuery('.page-header').removeClass('bgc');
 
-	x = $('.page-header').height();
+	x = jQuery('.page-header').height();
 	console.log(x);
-	$('.value').html(x);
+	jQuery('.value').html(x);
 
 
-	$('.page-header').height(120);
+	jQuery('.page-header').height(120);
 
-	x = $('.page-header').height();
+	x = jQuery('.page-header').height();
 	console.log(x);
-	$('.value').html('<span class="bgc">'+ x +'</span>');
+	jQuery('.value').html('<span class="bgc">'+ x +'</span>');
 
 });
 

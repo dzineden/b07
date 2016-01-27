@@ -245,11 +245,6 @@ h6{
   border-radius: 50%;
 }
 
-.site-nav{
-  float: right;
-  margin-top: 26px;
-  margin-right: 10px;
-}
 
 .mobile-menu{
   border: solid 2px #FFF;
@@ -257,6 +252,8 @@ h6{
   width: 40px;
   padding: 5px;
   cursor: pointer;
+  float: right;
+  margin: 22px 15px 0 0;
 }
 .mobile-menu span{
   background-color: #FFF;
@@ -271,15 +268,67 @@ h6{
 
 .site-links{
   display: none;
+  list-style: none;
 }
+@media(max-width: 767px){
+  .site-nav{
+    clear: both;
+    position: relative;
+  -webkit-transition: all 750ms ease;
+  -moz-transition: all 750ms ease;
+  -ms-transition: all 750ms ease;
+  -o-transition: all 750ms ease;
+  transition: all 750ms ease;
 
+  }
+  .site-links{
+    padding-left: 0;
+    border:solid 10px blue;
+    position: absolute;
+    width: 80%;
+    top: 50px;
+    z-index: 101;
+    display: none;
+    left: -200px;
+  -webkit-transition: all 750ms ease;
+  -moz-transition: all 750ms ease;
+  -ms-transition: all 750ms ease;
+  -o-transition: all 750ms ease;
+  transition: all 750ms ease;
+  }
+  .menu-open{
+    left: 0;
+    display: block;
+  -webkit-transition: all 750ms ease;
+  -moz-transition: all 750ms ease;
+  -ms-transition: all 750ms ease;
+  -o-transition: all 750ms ease;
+  transition: all 750ms ease;
+  }
+  .site-links li{
+  }
+  .site-links li a{
+    display: block;
+    background-color: #FFF;
+    padding: 0 15px;
+    line-height: 35px;
+    border-bottom: solid 1px black;
+  }
+  .submenu{
+    display: none
+  }
+}
 @media(min-width: 768px){
+.site-nav{
+  float: right;
+  margin-top: 26px;
+  margin-right: 10px;
+}
   .mobile-menu{display: none;}
   .site-links{
-    display: block;
-    list-style: none;
+    display: block !important;
     margin: 0;
-    padding-left: 0
+    padding-left: 0;
   }
   .site-links li{
     float: left;
@@ -685,8 +734,12 @@ cite:before{
   border: solid 5px rgba(0,0,0,.5);
   background-color: rgba(0,0,0,.8);
   position: fixed;
-  right: 10px;
-  top: 10px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 150px;
   z-index: 100;
   text-align: center;
   color: #FFF;
@@ -696,6 +749,15 @@ cite:before{
 .value{
   font-size: 24px;
 }
+
+
+.more{
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+.showmore{display: block;}
+
 
 
 /* ==========================================================================
